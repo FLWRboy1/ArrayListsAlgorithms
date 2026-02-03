@@ -1,8 +1,9 @@
+import java.io.IOException;
 import java.util.ArrayList;
 
-public class TestingTheThing {
+public class TestingTheThing{
     
-    public static void main(String[]args){
+    public static void main(String[]args) throws IOException{
 
 
         ArrayList<String> names = new ArrayList<String>();
@@ -24,17 +25,56 @@ public class TestingTheThing {
 
         ArrayList<String> list = new ArrayList<String>();
 
-        list.add(0,"c");
-        list.add(1,"d");
+        list.add("ab");
+        list.add("cd");
+        list.add("ef");
+        list.add("gh");
+        list.add("abcdefgh");
 
-        //for(int x = 0; x < list.size(); x++){
+        for(int x = 0; x < list.size(); x++){
             
-            //list.get(x);
-            
-        //}
+            if(list.get(x).substring(0,1).equals("a")){
+
+                list.set(x,"starts with a");
+
+            }
+
+        }
 
         System.out.println(list);
-                
+
+
+
+        ArrayList<String> listNO2 = new ArrayList<String>();
+
+        list.add("ab");
+        list.add("cd");
+        list.add("ef");
+        list.add("gh");
+        list.add("abcdefgh");
+
+        int index = 0;
+
+        while(i < listNO2.size()){
+
+            if(listNO2.get(index).indexOf("ef") >= 0){
+
+                listNO2.remove(index);
+
+            }
+
+        }
+               
+        
+        
+        //ArrayList<String> arrays = new ArrayList<String>();
+
+        //for(String array : arrays){
+
+            //arrays.get();
+
+        //}
+
     }
 
 }
