@@ -36,6 +36,7 @@ public class Practice{
         String store = list.set(2,"Gojo");
         String store2 = list.get(3);
         String store3 = list.remove(1); 
+        int s = list.size();
 
 
     }
