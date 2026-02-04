@@ -67,6 +67,33 @@ public class TestingTheThing{
                
         System.out.println(listNO2);
         
+
+
+        ArrayList<String> students = new ArrayList<String>();
+        students.add("a");
+        students.add("b");
+        students.add("Bob");
+        students.add("c");
+        students.add("d");
+        students.add("Bob");
+
+        for(int h = students.size()-1; h > 0; h--){
+
+            if(students.get(h).indexOf("Bob") >= 0){
+
+                students.remove(h);
+
+            }else{
+
+            
+
+            }
+
+        }
+    
+        System.out.println(students);
+
+
         //ArrayList<String> arrays = new ArrayList<String>();
 
         //for(String array : arrays){
