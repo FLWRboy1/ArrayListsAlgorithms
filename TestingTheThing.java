@@ -47,11 +47,11 @@ public class TestingTheThing{
 
         ArrayList<String> listNO2 = new ArrayList<String>();
 
-        list.add("ab");
-        list.add("cd");
-        list.add("ef");
-        list.add("gh");
-        list.add("abcdefgh");
+        listNO2.add("ab");
+        listNO2.add("cd");
+        listNO2.add("ef");
+        listNO2.add("gh");
+        listNO2.add("abcdefgh");
 
         int index = 0;
 
@@ -65,7 +65,7 @@ public class TestingTheThing{
 
         }
                
-        
+        System.out.println(listNO2);
         
         //ArrayList<String> arrays = new ArrayList<String>();
 
