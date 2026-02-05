@@ -83,10 +83,6 @@ public class TestingTheThing{
 
                 students.remove(h);
 
-            }else{
-
-            
-
             }
 
         }
