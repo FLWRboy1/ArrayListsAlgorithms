@@ -4,9 +4,11 @@ public class FebFith {
     
     public static ArrayList <Integer> doublingSize(ArrayList <Integer> list){
 
-        for(int i = 0; i < list.size(); i++)
+        for(int i = 0; i < list.size(); i++){
+
 
             list.add(i+1, list.get(i));
+        }
 
         return list;
 
