@@ -6,8 +6,8 @@ public class FebFith {
 
         for(int i = 0; i < list.size(); i++){
 
-
             list.add(i+1, list.get(i));
+
         }
 
         return list;
