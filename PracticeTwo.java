@@ -8,6 +8,7 @@ public class PracticeTwo {
         int num = arr.length + 1;
 
         System.out.println(findRowAvg(arr, num));
+        System.out.println(findMinRowAvg(arr));
 
     }
 
@@ -39,6 +40,44 @@ public class PracticeTwo {
         }
 
         return totalSum;
+
     }
+
+    public static int findMinRowAvg(int[][]array){
+
+    ArrayList<Integer> mins = new ArrayList<Integer>();
+    int totalSum = 0;
+    int avg = 0;
+
+    for(int row = 0; row < array.length; row++){
+
+        int min = array[row][0];
+
+        for(int col = 0; col < array[0].length; col++){
+
+            if(array[row][col] < min){
+
+                min = array[row][col];
+
+            }
+
+        }
+
+        mins.add(min);
+
+    }
+
+    System.out.println(mins);
+
+    for(int num : mins){
+
+        totalSum += num;
+
+    }
+
+    avg = totalSum / mins.size();
+
+    return avg;
+}
 
 }
